@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Market Page
+{% endblock %}
+
+{% block content %}
+  <h1 class="mt-4 text-center">Market Page</h1>
+  <div class="row mt-5 p-2 d-flex justify-content-center">
+    {% for item in items %}
+      {% include 'item.html' %}
+    {% endfor %}
+  </div>
+{% endblock %}
